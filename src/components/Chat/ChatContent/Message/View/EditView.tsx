@@ -9,6 +9,7 @@ import { ChatInterface } from '@type/chat';
 import PopupModal from '@components/PopupModal';
 import TokenCount from '@components/TokenCount';
 import CommandPrompt from '../CommandPrompt';
+import LinkSummarize from '../LinkSummarize';
 
 const EditView = ({
   content,
@@ -239,6 +240,7 @@ const EditViewButtons = memo(
           )}
         </div>
         {sticky && advancedMode && <TokenCount />}
+        <LinkSummarize />
         <CommandPrompt _setContent={_setContent} />
       </div>
     );
